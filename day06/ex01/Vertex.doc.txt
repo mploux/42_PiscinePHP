@@ -1,0 +1,13 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles x, y, z, w homogeneous coordinate.
+
+An instance can be constructed from only x, y, z values:
+new Color( array( 'x' => 1.00, 'y' => 1.00, 'z' => 1.00 ) );
+
+Or with the w coordinate or an RGB color:
+new Color( array( ... , 'w' => 1.00, 'color' => new Color() ) );
+
+By default the w coordinate is 1.0.
+By default the color is pure white: Color(255, 255, 255).
+---------------------------------------------------------------------- Vertex ->

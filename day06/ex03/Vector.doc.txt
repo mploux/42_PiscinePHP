@@ -1,0 +1,41 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class handles x, y, z, w vector.
+
+An instance can be contructed from either dest vertex:
+new Color( array( 'dest' => new Vertex() ) );
+
+Or from a dest and origin:
+new Color( array( 'dest' => new Vertex(), 'orig' => new Vertex() ) );
+
+By default orig is Vertex(0, 0, 0, 1)
+
+The class provides the following methods :
+
+float	magnitude();
+Returns the magnitude/length of the vector.
+
+Vector	normalize();
+Returns the norm of the vector.
+
+Vector	add( Vector $rhs);
+Returns the sum of the two vectors.
+
+Vector	sub( Vector $rhs);
+Returns the difference of the two vectors.
+
+Vector	opposite();
+Returns the opposite of the vector.
+
+Vector	scalarProduct( $k );
+Returns the product of the vector with a scalar.
+
+float	dotProduct ( Vector $rhs);
+Return the dot product of the two vectors.
+
+float	cos( Vector $rhs );
+Return the cos angle of the twi vectors.
+
+Vector	crossProduct( Vector $rhs );
+Returns the cross product of the two vectors.  
+---------------------------------------------------------------------- Vector ->

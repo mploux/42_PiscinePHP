@@ -1,0 +1,988 @@
+<!--
+                                                          :::      ::::::::
+     mendeleiev.html                                    :+:      :+:    :+:
+                                                      +:+ +:+         +:+
+     By: mploux <mploux@student.42.fr>              +#+  +:+       +#+
+                                                  +#+#+#+#+#+   +#+
+     Created: 2017/01/09 13:33:37 by mploux            #+#    #+#
+     Updated: 2017/01/09 20:19:28 by mploux           ###   ########.fr
+-->
+
+<html>
+<head>
+	<title>Mendeleïev</title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			background-color: #ccc;
+			margin: 10px 0px;
+			font-family: monospace;
+		}
+
+		h1 {
+			color: black;
+			font-style: bold;
+		}
+
+		.element-symbol {
+			font-size: 40px;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+
+		.element-number {
+			font-size: 14px;
+			text-align: left;
+		}
+
+		.element-mass {
+			font-size: 14px;
+			text-align: right;
+		}
+
+		.vertical-separator {
+			width: 20px;
+		}
+
+		.cell-basic {
+			border: 1px solid black;
+			background-color: #fff;
+			width:70px;
+			height:80px;
+		}
+
+		.cell-a {
+			border: 1px solid black;
+			background-color: #338855;
+			width:70px;
+			height:80px;
+		}
+
+		.cell-b {
+			border: 1px solid black;
+			background-color: #4477ff;
+			width:70px;
+			height:80px;
+		}
+
+		.cell-c {
+			border: 1px solid black;
+			background-color: #ff3322;
+			width:70px;
+			height:80px;
+		}
+
+		.cell-d {
+			border: 1px solid black;
+			background-color: #ffdd00;
+			width:70px;
+			height:80px;
+		}
+
+		.image {
+			height: 70px;
+			padding: 0px 30px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<table>
+		<tr>
+			<td>
+				<img title="Mendeleïev" alt="Mendeleïev" class="image" src="http://www.larousse.fr/encyclopedie/data/images/1310399-Dmitri_Ivanovitch_Mendele%C3%AFev.jpg">
+			</td>
+			<td>
+				<h1>Tableau périodique des éléments de Mendeleïev</h1>
+			</td>
+			<td>
+				<img title="Mendeleïev" alt="Mendeleïev" class="image" src="http://www.larousse.fr/encyclopedie/data/images/1310399-Dmitri_Ivanovitch_Mendele%C3%AFev.jpg">
+			</td>
+		</tr>
+	</table>
+	<hr style="border:1px solid black"/>
+	<table>
+	<tr>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">1.01</div>
+				<div class="element-symbol">H</div>
+				<div class="element-number">1</div>
+			</div>
+		</td>
+		<td><div class="vertical-separator"></div></td>
+		<td colspan="16">
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">4.00</div>
+				<div class="element-symbol">He</div>
+				<div class="element-number">2</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">6.94</div>
+				<div class="element-symbol">Li</div>
+				<div class="element-number">3</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">9.01</div>
+				<div class="element-symbol">Be</div>
+				<div class="element-number">4</div>
+			</div>
+		</td>
+		<td><div class="vertical-separator"></div></td>
+		<td colspan="10">
+		</td>
+		<td>
+			<div class="cell-c">
+				<div class="element-mass">10.81</div>
+				<div class="element-symbol">B</div>
+				<div class="element-number">5</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">12.01</div>
+				<div class="element-symbol">C</div>
+				<div class="element-number">6</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">14.01</div>
+				<div class="element-symbol">N</div>
+				<div class="element-number">7</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">16.00</div>
+				<div class="element-symbol">O</div>
+				<div class="element-number">8</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">19.00</div>
+				<div class="element-symbol">F</div>
+				<div class="element-number">9</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">20.18</div>
+				<div class="element-symbol">Ne</div>
+				<div class="element-number">10</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">23.00</div>
+				<div class="element-symbol">Na</div>
+				<div class="element-number">11</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">24.31</div>
+				<div class="element-symbol">Mg</div>
+				<div class="element-number">12</div>
+			</div>
+		</td>
+		<td><div class="vertical-separator"></div></td>
+		<td colspan="10">
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">26.98</div>
+				<div class="element-symbol">Al</div>
+				<div class="element-number">13</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-c">
+				<div class="element-mass">28.10</div>
+				<div class="element-symbol">Si</div>
+				<div class="element-number">14</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">30.97</div>
+				<div class="element-symbol">P</div>
+				<div class="element-number">15</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">32.07</div>
+				<div class="element-symbol">S</div>
+				<div class="element-number">16</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">35.45</div>
+				<div class="element-symbol">Cl</div>
+				<div class="element-number">17</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">39.95</div>
+				<div class="element-symbol">Ar</div>
+				<div class="element-number">18</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">39.10</div>
+				<div class="element-symbol">K</div>
+				<div class="element-number">19</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">40.08</div>
+				<div class="element-symbol">Ca</div>
+				<div class="element-number">20</div>
+			</div>
+		</td>
+		<td><div class="vertical-separator"></div></td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">44.96</div>
+				<div class="element-symbol">Sc</div>
+				<div class="element-number">21</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">47.87</div>
+				<div class="element-symbol">Ti</div>
+				<div class="element-number">22</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">50.94</div>
+				<div class="element-symbol">V</div>
+				<div class="element-number">23</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">52.00</div>
+				<div class="element-symbol">Cr</div>
+				<div class="element-number">24</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">54.94</div>
+				<div class="element-symbol">Mn</div>
+				<div class="element-number">25</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">55.85</div>
+				<div class="element-symbol">Fe</div>
+				<div class="element-number">26</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">58.93</div>
+				<div class="element-symbol">Co</div>
+				<div class="element-number">27</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">58.69</div>
+				<div class="element-symbol">Ni</div>
+				<div class="element-number">28</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">63.55</div>
+				<div class="element-symbol">Cu</div>
+				<div class="element-number">29</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">65.38</div>
+				<div class="element-symbol">Zn</div>
+				<div class="element-number">30</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">69.72</div>
+				<div class="element-symbol">Ga</div>
+				<div class="element-number">31</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-c">
+				<div class="element-mass">72.63</div>
+				<div class="element-symbol">Ge</div>
+				<div class="element-number">32</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-c">
+				<div class="element-mass">74.92</div>
+				<div class="element-symbol">As</div>
+				<div class="element-number">33</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">78.97</div>
+				<div class="element-symbol">Se</div>
+				<div class="element-number">34</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">79.90</div>
+				<div class="element-symbol">Br</div>
+				<div class="element-number">35</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">83.80</div>
+				<div class="element-symbol">Kr</div>
+				<div class="element-number">36</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">85.48</div>
+				<div class="element-symbol">Rb</div>
+				<div class="element-number">37</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">87.62</div>
+				<div class="element-symbol">Sr</div>
+				<div class="element-number">38</div>
+			</div>
+		</td>
+		<td><div class="vertical-separator"></div></td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">88.91</div>
+				<div class="element-symbol">Y</div>
+				<div class="element-number">39</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">91.22</div>
+				<div class="element-symbol">Zr</div>
+				<div class="element-number">40</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">92.91</div>
+				<div class="element-symbol">Nb</div>
+				<div class="element-number">41</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">95.95</div>
+				<div class="element-symbol">Mo</div>
+				<div class="element-number">42</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">98.00</div>
+				<div class="element-symbol">Tc</div>
+				<div class="element-number">43</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">101.07</div>
+				<div class="element-symbol">Ru</div>
+				<div class="element-number">44</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">102.91</div>
+				<div class="element-symbol">Rh</div>
+				<div class="element-number">45</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">106.42</div>
+				<div class="element-symbol">Pd</div>
+				<div class="element-number">46</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">107.87</div>
+				<div class="element-symbol">Ag</div>
+				<div class="element-number">47</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">112.41</div>
+				<div class="element-symbol">Cd</div>
+				<div class="element-number">48</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">114.82</div>
+				<div class="element-symbol">In</div>
+				<div class="element-number">49</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">118.71</div>
+				<div class="element-symbol">Sn</div>
+				<div class="element-number">50</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-c">
+				<div class="element-mass">121.76</div>
+				<div class="element-symbol">Sb</div>
+				<div class="element-number">51</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-c">
+				<div class="element-mass">127.60</div>
+				<div class="element-symbol">Te</div>
+				<div class="element-number">52</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">126.90</div>
+				<div class="element-symbol">I</div>
+				<div class="element-number">53</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">131.29</div>
+				<div class="element-symbol">Xe</div>
+				<div class="element-number">54</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">132.91</div>
+				<div class="element-symbol">Cs</div>
+				<div class="element-number">55</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">137.33</div>
+				<div class="element-symbol">Ba</div>
+				<div class="element-number">56</div>
+			</div>
+		</td>
+		<td><div class="vertical-separator"></div></td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass"></div>                                   <!-- ICI -->
+				<div class="element-symbol"></div>
+				<div class="element-number"></div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">178.49</div>
+				<div class="element-symbol">Hf</div>
+				<div class="element-number">72</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">180.95</div>
+				<div class="element-symbol">Ta</div>
+				<div class="element-number">73</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">183.84</div>
+				<div class="element-symbol">W</div>
+				<div class="element-number">74</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">186.21</div>
+				<div class="element-symbol">Re</div>
+				<div class="element-number">75</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">190.23</div>
+				<div class="element-symbol">Os</div>
+				<div class="element-number">76</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">192.22</div>
+				<div class="element-symbol">Ir</div>
+				<div class="element-number">77</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">195.08</div>
+				<div class="element-symbol">Pt</div>
+				<div class="element-number">78</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">196.97</div>
+				<div class="element-symbol">Au</div>
+				<div class="element-number">79</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">200.60</div>
+				<div class="element-symbol">Hg</div>
+				<div class="element-number">80</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">204.39</div>
+				<div class="element-symbol">Ti</div>
+				<div class="element-number">81</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">207.20</div>
+				<div class="element-symbol">Pb</div>
+				<div class="element-number">82</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">208.98</div>
+				<div class="element-symbol">Bi</div>
+				<div class="element-number">83</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-c">
+				<div class="element-mass">209.00</div>
+				<div class="element-symbol">Po</div>
+				<div class="element-number">84</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">210.00</div>
+				<div class="element-symbol">At</div>
+				<div class="element-number">85</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-a">
+				<div class="element-mass">222.00</div>
+				<div class="element-symbol">Rn</div>
+				<div class="element-number">86</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">223.00</div>
+				<div class="element-symbol">Fr</div>
+				<div class="element-number">87</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">226.00</div>
+				<div class="element-symbol">Ra</div>
+				<div class="element-number">88</div>
+			</div>
+		</td>
+		<td><div class="vertical-separator"></div></td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass"></div>
+				<div class="element-symbol"></div>
+				<div class="element-number"></div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">267</div>
+				<div class="element-symbol">Rf</div>
+				<div class="element-number">104</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">268.00</div>
+				<div class="element-symbol">Db</div>
+				<div class="element-number">105</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">269.00</div>
+				<div class="element-symbol">Sg</div>
+				<div class="element-number">106</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">270.00</div>
+				<div class="element-symbol">Bh</div>
+				<div class="element-number">107</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">277.00</div>
+				<div class="element-symbol">Hs</div>
+				<div class="element-number">108</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">278.00</div>
+				<div class="element-symbol">Mt</div>
+				<div class="element-number">109</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">278.00</div>
+				<div class="element-symbol">Ds</div>
+				<div class="element-number">110</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">282.00</div>
+				<div class="element-symbol">Rg</div>
+				<div class="element-number">111</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-b">
+				<div class="element-mass">285.00</div>
+				<div class="element-symbol">Cn</div>
+				<div class="element-number">112</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">286.00</div>
+				<div class="element-symbol">Nh</div>
+				<div class="element-number">113</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">289.00</div>
+				<div class="element-symbol">Fl</div>
+				<div class="element-number">114</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">289.00</div>
+				<div class="element-symbol">Mc</div>
+				<div class="element-number">115</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">293.00</div>
+				<div class="element-symbol">Lv</div>
+				<div class="element-number">116</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">294.00</div>
+				<div class="element-symbol">Ts</div>
+				<div class="element-number">117</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-basic">
+				<div class="element-mass">294.00</div>
+				<div class="element-symbol">Og</div>
+				<div class="element-number">118</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="18">
+			<div style="height:10px"></div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">138.91</div>
+				<div class="element-symbol">La</div>
+				<div class="element-number">57</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">140.12</div>
+				<div class="element-symbol">Ce</div>
+				<div class="element-number">58</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">140.91</div>
+				<div class="element-symbol">Pr</div>
+				<div class="element-number">59</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">144.24</div>
+				<div class="element-symbol">Nd</div>
+				<div class="element-number">60</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">145.00</div>
+				<div class="element-symbol">Pm</div>
+				<div class="element-number">61</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">145.00</div>
+				<div class="element-symbol">Sm</div>
+				<div class="element-number">62</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">151.96</div>
+				<div class="element-symbol">Eu</div>
+				<div class="element-number">63</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">157.25</div>
+				<div class="element-symbol">Gd</div>
+				<div class="element-number">64</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">158.93</div>
+				<div class="element-symbol">Tb</div>
+				<div class="element-number">65</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">162.50</div>
+				<div class="element-symbol">Dy</div>
+				<div class="element-number">66</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">164.93</div>
+				<div class="element-symbol">Ho</div>
+				<div class="element-number">67</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">167.26</div>
+				<div class="element-symbol">Er</div>
+				<div class="element-number">68</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">168.93</div>
+				<div class="element-symbol">Tm</div>
+				<div class="element-number">69</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">173.05</div>
+				<div class="element-symbol">Yb</div>
+				<div class="element-number">70</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">174.97</div>
+				<div class="element-symbol">Lu</div>
+				<div class="element-number">71</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">227.00</div>
+				<div class="element-symbol">Ac</div>
+				<div class="element-number">89</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">232.08</div>
+				<div class="element-symbol">Th</div>
+				<div class="element-number">90</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">231.04</div>
+				<div class="element-symbol">Pa</div>
+				<div class="element-number">91</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">238.03</div>
+				<div class="element-symbol">U</div>
+				<div class="element-number">92</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">237.00</div>
+				<div class="element-symbol">Np</div>
+				<div class="element-number">93</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">244.00</div>
+				<div class="element-symbol">Pu</div>
+				<div class="element-number">94</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">243.00</div>
+				<div class="element-symbol">Am</div>
+				<div class="element-number">95</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">247.00</div>
+				<div class="element-symbol">Cm</div>
+				<div class="element-number">96</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">247.00</div>
+				<div class="element-symbol">Bk</div>
+				<div class="element-number">97</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">251.00</div>
+				<div class="element-symbol">Cf</div>
+				<div class="element-number">98</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">252.00</div>
+				<div class="element-symbol">Es</div>
+				<div class="element-number">99</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">257.00</div>
+				<div class="element-symbol">Fm</div>
+				<div class="element-number">100</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">258</div>
+				<div class="element-symbol">Md</div>
+				<div class="element-number">101</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">259.00</div>
+				<div class="element-symbol">No</div>
+				<div class="element-number">102</div>
+			</div>
+		</td>
+		<td>
+			<div class="cell-d">
+				<div class="element-mass">266.00</div>
+				<div class="element-symbol">Lr</div>
+				<div class="element-number">103</div>
+			</div>
+		</td>
+	</tr>
+	</table>
+	</center>
+</body>
+</html>
